@@ -14,16 +14,37 @@ Example 2:
 Input: s = "00110", k = 2
 Output: true
 
+
+
+///"00110110"
+k=2 total substring=2^k=4
+therefore
+//00
+//01
+//10
+//11
+when we take k=3 total subString =2^k=8
+1.//000
+2.//001
+3.//010
+4.//011
+5.//100
+6.//101
+7.//110
+8.//111
+
+
+
 #### soln
 class Solution {
     public boolean hasAllCodes(String s, int k) {
-        Set set=new HashSet();
+        Set set=new HashSet();//prevent repeated counting, a set can be used to store the result we previously counted.
         int start=0;
         int count =0;
         for(int i=0;i<s.length();i++){
             count++;
             if(count==k){
-                set.add(s.substring(start,start+k));
+                set.add(s.substring(start,start+k));//add substring into 
                 start++;
                 count--;
                 

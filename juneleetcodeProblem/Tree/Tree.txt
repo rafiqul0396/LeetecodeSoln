@@ -23,3 +23,19 @@ complete Binary Tree: minimum number of  nodes= 2*has
                       n+1 links
 
 
+
+
+
+# Basic Operations :
+            
+            1. Inserting an element into a tree;
+            2. Deleting an element from a tree.
+            3. Searching for an element 
+            4.Traversing the tree.
+
+
+# Auxiliary Operations
+               1. Finding the size of the tree
+               2. Finding the Height of the tree
+               3. Finding the level which has maximum sum
+               4.Finding the least commn ancestor for a given pair of nodes and many more

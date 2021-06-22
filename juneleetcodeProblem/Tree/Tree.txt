@@ -1,0 +1,25 @@
+Tree: is a data structure and non-linear data structure
+Root: no parent 
+edge:link bt parent and child
+Leaf Node: no child
+Siblings: children of same parent 
+ancestor: a Node p is an ancestor of node  q if there exists a  path from root to q and p 
+appears on the paths.the node q is called a descendent of paths.
+Level: the set of all nodes at a given  depth is called the Level
+Depth: length of the  path from the root to the node
+Height:the length of the path from root to deepest nodes in the tree 
+Binary tree: if every node has two or one or zero child 
+Empty tree is also Binary tree
+Full Binary Tree: if  each node have   exactly two children and all leaf  nodes are at the same Level
+complete Bnary tree: if all  leaf nodes are  at a Height h or h-1 and without any missing 
+number in the sequence
+
+++++++++++++++++++++++++++++++++++++++
+the number of nodes n in a full binar tree =2*(h+1)-1
+complete Binary Tree: minimum number of  nodes= 2*has
+                      max no of nodes =2*h+1  -1
+
+                      leaf nodes in full Binary tree: 2*h
+                      n+1 links
+
+

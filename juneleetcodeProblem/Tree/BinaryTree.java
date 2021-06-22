@@ -1,5 +1,8 @@
 package juneleetcodeProblem.Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 //import org.graalvm.compiler.graph.Node;
 //Node class in the tree 
 class Node {
@@ -13,11 +16,42 @@ class Node {
         this.right = null;
 
     }
+
 }
 
 public class BinaryTree {
 
     Node root;
+
+    public static Node insert(int val) {
+        Node root = Node(0);
+        if (root == null) {
+            return Node(val);
+
+        }
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+        while (q.size() > 0) {
+            Node n = q.poll();
+            if (n.left != null) {
+                n.left = Node(val);
+                return root;
+            }
+            if (n.right != null) {
+                n.right = Node(val);
+                return root;
+            }
+            q.add(root.left);
+            q.add(root.right);
+
+        }
+        return root;
+
+    }
+
+    private static Node Node(int val) {
+        return null;
+    }
 
     // printing the noes in the tree
     public void print(Node root) {
@@ -41,6 +75,10 @@ public class BinaryTree {
         tree.root.right.left = new Node(6);
         tree.root.right.right = new Node(7);
         tree.print(tree.root);
+
+        tree.insert(2);
+        tree.insert(3);
+        // tree.print(root);
 
     }
 
